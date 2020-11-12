@@ -14,7 +14,7 @@ On Unix or MacOS
 ## Enabling virtual environment
 On Windows
 ```shell
-.\.venv\Scripts\activate.bat
+.\.venv\Scripts\activate
 ```
 
 On Unix or MacOS
