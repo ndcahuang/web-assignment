@@ -14,7 +14,7 @@ source .venv/bin/activate
 ## Running the server
 On Windows
 ```shell
-./run.bat
+.\run.bat
 ```
 
 On Unix or MacOS

@@ -3,10 +3,12 @@ Library    Selenium2Library
 
 *** Variables ***
 ${TARGET}    http://localhost:5000/login
+${TIMEOUT}   5 seconds
 
 *** Test Cases ***
 
 Get Page Without Logging In Using Chrome
+    set timeout
     open app with chrome
     check labels and fields and button
     check state without logging in
@@ -14,6 +16,7 @@ Get Page Without Logging In Using Chrome
     close app
 
 Get Page Without Logging In Using Firefox
+    set timeout
     open app with firefox
     check labels and fields and button
     check state without logging in
@@ -29,6 +32,7 @@ Login With Correct Pairs Using Chrome
     close app
 
 Login With Correct Pairs Using Firefox
+    set timeout
     open app with firefox
     log in to app    admin     admin
     check labels and fields and button
@@ -37,6 +41,7 @@ Login With Correct Pairs Using Firefox
     close app
 
 Login With Incorrect Pairs Using Chrome
+    set timeout
     open app with chrome
     log in to app    admin    admi
     check labels and fields and button
@@ -45,6 +50,7 @@ Login With Incorrect Pairs Using Chrome
     close app
 
 Login With Incorrect Pairs Using Firefox
+    set timeout
     open app with firefox
     log in to app    hello    hell
     check labels and fields and button
@@ -53,6 +59,8 @@ Login With Incorrect Pairs Using Firefox
     close app
 
 *** Keywords ***
+set timeout
+    Set Selenium Timeout        ${TIMEOUT}
 open app with chrome
     Open Browser                ${TARGET}    chrome
     Wait Until Page Contains    CURRENT STATE
