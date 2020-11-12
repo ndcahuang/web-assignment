@@ -22,17 +22,6 @@ On Unix or MacOS
 source .venv/bin/activate
 ```
 
-## Running the server
-On Windows
-```shell
-.\run.bat
-```
-
-On Unix or MacOS
-```shell
-./run.sh
-```
-
 ## Running unit tests and generating a coverage report
 Run the test script
 ```shell
@@ -47,6 +36,17 @@ coverage report main.py
 For an html report
 ```shell
 coverage html
+```
+
+## Running the server
+On Windows
+```shell
+.\run.bat
+```
+
+On Unix or MacOS
+```shell
+./run.sh
 ```
 
 ## Running robot framework tests
