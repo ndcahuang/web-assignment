@@ -3,7 +3,7 @@
 ## Enabling virtual environment
 On Windows
 ```shell
-.venv/Scripts/activate.bat
+.\.venv\Scripts\activate.bat
 ```
 
 On Unix or MacOS
@@ -40,7 +40,7 @@ coverage html
 
 ## Running robot framework tests
 ```shell
-robot test.robot
+cd && robot test.robot && && cd ..
 ```
 
 ## Exiting virtual environment
