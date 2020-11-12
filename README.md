@@ -20,9 +20,9 @@ On Windows
 On Unix or MacOS
 ```shell
 ./run.sh
+```
 
 ## Running unit tests and generating a coverage report
-
 ```shell
 coverage run test.py
 coverage report main.py
