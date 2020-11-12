@@ -1,41 +1,43 @@
 # web-assignment
 
 ## Enabling virtual environment
-
-```On Windows
+On Windows
+```shell
 .venv/Scripts/activate.bat
 ```
 
-```On Unix or MacOS
+On Unix or MacOS
+```shell
 source .venv/bin/activate
 ```
 
 ## Running the server
-
-```On Windows
+On Windows
+```shell
 ./run.bat
 ```
 
-```On Unix or MacOS
+On Unix or MacOS
+```shell
 ./run.sh
 
 ## Running unit tests and generating a coverage report
 
-```
+```shell
 coverage run test.py
 coverage report main.py
 ```
-
-```For an html report
+For an html report
+```shell
 coverage html
 ```
 
 ## Running robot framework tests
-```
+```shell
 robot test.robot
 ```
 
 ## Exiting virtual environment
-```
+```shell
 deactivate
 ```
