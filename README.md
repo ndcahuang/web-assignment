@@ -11,17 +11,6 @@ On Unix or MacOS
 ./install.sh
 ```
 
-## Running the server
-On Windows
-```shell
-.\run.bat
-```
-
-On Unix or MacOS
-```shell
-./run.sh
-```
-
 ## Enabling virtual environment
 On Windows
 ```shell
@@ -31,6 +20,17 @@ On Windows
 On Unix or MacOS
 ```shell
 source .venv/bin/activate
+```
+
+## Running the server
+On Windows
+```shell
+.\run.bat
+```
+
+On Unix or MacOS
+```shell
+./run.sh
 ```
 
 ## Running unit tests and generating a coverage report
