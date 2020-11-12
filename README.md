@@ -22,6 +22,17 @@ On Unix or MacOS
 ./run.sh
 ```
 
+## Enabling virtual environment
+On Windows
+```shell
+.\.venv\Scripts\activate.bat
+```
+
+On Unix or MacOS
+```shell
+source .venv/bin/activate
+```
+
 ## Running unit tests and generating a coverage report
 Run the test script
 ```shell
@@ -41,17 +52,6 @@ coverage html
 ## Running robot framework tests
 ```shell
 cd && robot test.robot && cd ..
-```
-
-## Enabling virtual environment
-On Windows
-```shell
-.\.venv\Scripts\activate.bat
-```
-
-On Unix or MacOS
-```shell
-source .venv/bin/activate
 ```
 
 ## Exiting virtual environment
