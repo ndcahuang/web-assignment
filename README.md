@@ -40,7 +40,7 @@ coverage html
 
 ## Running robot framework tests
 ```shell
-cd && robot test.robot && && cd ..
+cd && robot test.robot && cd ..
 ```
 
 ## Exiting virtual environment
