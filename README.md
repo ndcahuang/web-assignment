@@ -1,5 +1,16 @@
 # web-assignment
 
+## Install required packages
+On Windows
+```shell
+.\install.bat
+```
+
+On Unix or MacOS
+```shell
+./install.sh
+```
+
 ## Running the server
 On Windows
 ```shell
