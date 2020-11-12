@@ -50,6 +50,13 @@ coverage html
 ```
 
 ## Running robot framework tests
+
+On Windows
+```shell
+cd robot ; robot test.robot ; cd ..
+```
+
+On Unix or MacOS
 ```shell
 cd robot && robot test.robot && cd ..
 ```
