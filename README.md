@@ -1,16 +1,5 @@
 # web-assignment
 
-## Enabling virtual environment
-On Windows
-```shell
-.\.venv\Scripts\activate.bat
-```
-
-On Unix or MacOS
-```shell
-source .venv/bin/activate
-```
-
 ## Running the server
 On Windows
 ```shell
@@ -41,6 +30,17 @@ coverage html
 ## Running robot framework tests
 ```shell
 cd && robot test.robot && cd ..
+```
+
+## Enabling virtual environment
+On Windows
+```shell
+.\.venv\Scripts\activate.bat
+```
+
+On Unix or MacOS
+```shell
+source .venv/bin/activate
 ```
 
 ## Exiting virtual environment
