@@ -23,10 +23,16 @@ On Unix or MacOS
 ```
 
 ## Running unit tests and generating a coverage report
+Run the test script
 ```shell
 coverage run test.py
+```
+
+For a report in the command line output
+```shell
 coverage report main.py
 ```
+
 For an html report
 ```shell
 coverage html
