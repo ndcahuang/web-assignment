@@ -1,5 +1,41 @@
-import unittest, time, requests, json
+import main, unittest, time, requests, json
 from unittest import TestCase
+
+class TestAuthenticate(TestCase):
+    def setUp(self):
+        print("Testing with the following credentials:")
+
+    def tearDown(self):
+        print("Message returned from function: " + self.message)
+
+    def test_with_valid_credentials(self):
+        self.username = "hello"
+        self.password = "hello"
+        print(self.username + ", " + self.password)
+
+        expected = "You have successfully logged in!"
+        actual = main.authenticate(self.username, self.password)
+
+        self.assertEqual(expected, actual)
+        self.message = actual
+
+    def test_with_invalid_credentials(self):
+        self.username = "admin"
+        self.password = "admi"
+        print(self.username + ", " + self.password)
+
+        expected = "The username/password could not be found. Please try again."
+        actual = main.authenticate(self.username, self.password)
+        self.message = actual
+
+    def test_with_empty_credentials(self):
+        self.username = ""
+        self.password = ""
+        print(self.username + ", " + self.password)
+
+        expected = "Some fields are missing. Please try again."
+        actual = main.authenticate(self.username, self.password)
+        self.message = actual
 
 class TestLogin(TestCase):
     def setUp(self):
