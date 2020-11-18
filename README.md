@@ -22,7 +22,7 @@ On Unix or MacOS
 source .venv/bin/activate
 ```
 
-## Running unit tests and generating a coverage report
+## Running Flask tests and generating a coverage report
 Run the test script
 ```shell
 coverage run test.py
@@ -47,6 +47,17 @@ On Windows
 On Unix or MacOS
 ```shell
 ./run.sh
+```
+
+## Running unit tests with requests module
+On Windows
+```shell
+python .\test_with_requests.py
+```
+
+On Unix or MacOS
+```shell
+python ./test_with_requests.py
 ```
 
 ## Running robot framework tests
