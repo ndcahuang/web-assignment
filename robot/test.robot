@@ -48,6 +48,7 @@ Login With Incorrect Pairs Using Firefox
 Steps to setup
     Set Selenium Timeout        ${TIMEOUT}
     Should Be True              mylib.is_destination_reachable()
+
 Steps to teardown
     sleep    3s
     Close Browser
