@@ -50,6 +50,8 @@ On Unix or MacOS
 ```
 
 ## Running unit tests with requests module
+*These commands require a seperate virtual environment. Use another shell if applicable.*
+
 On Windows
 ```shell
 python .\test_with_requests.py
@@ -61,6 +63,7 @@ python ./test_with_requests.py
 ```
 
 ## Running robot framework tests
+*These commands require a seperate virtual environment. Use another shell if applicable.*
 
 On Windows
 ```shell
